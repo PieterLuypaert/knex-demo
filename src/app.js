@@ -48,8 +48,8 @@ app.use("/api/*", (req, res) => {
 // App routes for pages that will be rendered in the browser.
 // These routes will return HTML data.
 
-app.get("/", PageController.home);
-app.get("/about-us", PageController.about);
+app.get("/home", PageController.home);
+app.get("/about", PageController.about);
 app.get("/contact", PageController.contact);
 
 // 404 page
